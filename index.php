@@ -11,8 +11,8 @@ if ($score < 0 || $score > 100 || $attendancepercentage < 0 || $attendancepercen
 }
 
 //step 2
-$passed = ($score >= 50 && $attendance >= 75);
-echo $name . " has " . ($passed ? "PASSED" : "FAILED") . "\n";
+$passed = ($score >= 50 && $attendancepercentage >= 75);
+echo $student_name . " has " . ($passed ? "PASSED" : "FAILED") . "\n";
 
 //step 3
 $grade="";
